@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+	include head.jade
+	body
+		div.main
+			.container
+				// Main component for a primary marketing message or call to action
+				.jumbotron
+					h2 Mine Sweeper
+          label(for="width") Width
+          input(type="number" name="width")
+          label(for="height") height
+          input(type="number" name="number")
+          label(for="mineQuantity") Number of mines
+          input(type="number" name="mineQuantity")
+						
+			// /container
+
+		script(src='/public/jquery.min.js')
+		script(src='index.js')
